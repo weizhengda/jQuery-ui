@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery UI 对话框（Dialog） - 模态消息</title>
+  <link rel="stylesheet" href="http://apps.bdimg.com/libs/jqueryui/1.10.0/themes/blitzer/jquery-ui.css">
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+  <script>
+  $(function() {
+    $( "#dialog-message" ).dialog({
+      modal: true,
+      buttons: {
+        Ok: function() {
+          $( this ).dialog( "close" );
+        }
+      }
+    });
+  });
+  </script>
+</head>
+<body>
+ 
+<div id="dialog-message" title="下载完成">
+  <p>
+    <span class="ui-icon ui-icon-circle-check" style="float:left; margin:0 7px 50px 0;"></span>
+    您的文件已经成功下载到文件夹中。
+  </p>
+  <p>
+    当前使用存储空间的 <b>36%</b>。
+  </p>
+</div>
+ 
+<p>Sed vel diam id libero <a href="http://www.w3cschool.cc">rutrum convallis</a>. Donec aliquet leo vel magna. Phasellus rhoncus faucibus ante. Etiam bibendum, enim faucibus aliquet rhoncus, arcu felis ultricies neque, sit amet auctor elit eros a lectus.</p>
+ 
+ 
+</body>
+</html>
